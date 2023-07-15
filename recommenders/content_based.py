@@ -35,7 +35,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 
 # Importing data
-movies = pd.read_csv('resources/data/movies.csv', sep = ',')
+movies = pd.read_csv('resources/data/movies_new.csv', sep = ',')
 ratings = pd.read_csv('resources/data/ratings.csv')
 movies.dropna(inplace=True)
 
@@ -54,7 +54,8 @@ def data_preprocessing(subset_size):
 
     """
     # Split genre data into individual words.
-    movies['keyWords'] = movies['genres'].str.replace('|', ' ')
+    movies['keyWords'] = movies['tags']
+    # movies['keyWords'] = movies['genres'].str.replace('|', ' ') # replaced this code with the working one above.
     # Subset of the data
     movies_subset = movies[:subset_size]
     return movies_subset
