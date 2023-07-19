@@ -56,7 +56,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System", "Log In or Sign Up", "Comment", "Try Something New", "About FilmFuse", "Insights", "FAQ", "Contact Us"]
+    page_options = ["Recommender System", "Try Something New", "Insights", "FAQ", "Contact Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
